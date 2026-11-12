@@ -687,7 +687,7 @@ function checkout(){
   let subtotal=cart.reduce((s,p)=>s+p.price,0); 
   let total = descuentoAplicado > 0 ? Math.round(subtotal * (1 - descuentoAplicado / 100)) : subtotal; 
   const msg=["Hola CIBER PC Argentina, quiero comprar:", ...cart.map(p=>`- ${p.name} ($${p.price.toLocaleString('es-AR')} ARS)`), descuentoAplicado > 0 ? `Descuento ruleta: ${descuentoAplicado}% OFF` : '', `Total final: $${total.toLocaleString('es-AR')} ARS`].filter(Boolean).join("\n"); 
-  window.open(`https://wa.me/5491112345678?text=${encodeURIComponent(msg)}`, "_blank"); 
+  window.open(`https://wa.me/5491136174219?text=${encodeURIComponent(msg)}`, "_blank"); 
   novaSay('¡Gracias! 🙏 Tu pedido ya está listo en el WhatsApp de CIBER PC.'); 
 }
 
